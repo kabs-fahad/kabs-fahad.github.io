@@ -28,8 +28,28 @@
       line-height: 1.65;
     }
 
-    a { color: #ffffff !important; text-decoration: none; }
-    a:hover { color: #ffffff !important; text-decoration: underline; }
+  a {
+    position: relative;
+    color: #ffffff !important;
+    text-decoration: none; 
+  }
+
+  /* Custom underline */
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    transition: width 0s ease 0s; /* underline appears slowly with delay */
+  }
+
+  a:hover::after {
+    width: 100%;
+    transition: width 0.35s ease 0.15s;
+  }
 
     /* HEADER */
     header {
@@ -193,3 +213,4 @@
 
 </body>
 </html>
+
