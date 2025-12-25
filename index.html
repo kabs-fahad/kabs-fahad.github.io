@@ -132,6 +132,79 @@
       margin-top: 0.25rem;
     }
 
+    /* Resume Sections */
+    .resume-section {
+      margin-bottom: 2rem;
+    }
+    
+    .resume-item {
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+      transition: background-color 0.2s ease;
+    }
+    
+    .resume-item:last-child {
+      border-bottom: none;
+    }
+    
+    .resume-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+    }
+    
+    .resume-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+    
+    .resume-subtitle {
+      font-size: 0.95rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    
+    .resume-period {
+      font-size: 0.85rem;
+      color: var(--muted);
+      background-color: rgba(48, 54, 61, 0.3);
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      white-space: nowrap;
+    }
+    
+    .resume-description {
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-top: 0.75rem;
+    }
+    
+    .download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: rgba(88, 166, 255, 0.1);
+      border: 1px solid rgba(88, 166, 255, 0.2);
+      border-radius: 6px;
+      color: var(--link) !important;
+      transition: all 0.2s ease;
+    }
+    
+    .download-link:hover {
+      background-color: rgba(88, 166, 255, 0.2);
+      border-color: rgba(88, 166, 255, 0.3);
+    }
+    
+    .download-link::after {
+      display: none;
+    }
+
     footer {
       max-width: var(--maxw);
       margin: 4rem auto 2rem;
@@ -194,7 +267,9 @@
         <div class="item-title">SWISH Matrix</div>
         <div class="item-desc">A scalable Quotation Management System evolving into a full ERP platform. It will support end-to-end business operations, including advanced quotation workflows, user authentication, dynamic pricing, automated document generation, and integrated modules for sales, finance, inventory, and approvals—driving efficiency, accuracy, and streamlined business processes.</div>
       </div>
-      <a href="https://github.com/kabs-fahad">More in the archive</a> <i class="bi bi-arrow-right-short"></i>
+      <div class="text-end">
+        <a href="https://github.com/kabs-fahad">More in the archive</a> <i class="bi bi-arrow-right-short"></i>
+      </div>
     </section>
 
     <!-- ABOUT -->
@@ -206,7 +281,76 @@
     <!-- RESUME -->
     <section id="resume">
       <div class="section-title">Resume</div>
-      <a href="#">Download resume</a> <i class="bi bi-arrow-down-short"></i>
+
+      <!-- Experience Section -->
+      <div class="resume-section">
+        <h3 class="item-title" style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--muted);">Experience</h3>
+        
+        <div class="resume-item">
+          <div class="resume-header">
+            <div>
+              <div class="resume-title">Web Strategist & Team Lead</div>
+              <div class="resume-subtitle">SWISH.Global · Full‑Time</div>
+            </div>
+            <div class="resume-period">2022 – Present</div>
+          </div>
+          <div class="resume-description">
+            I am currently the Team Lead – Web & Development at <a href="https://www.swish.global">SWISH.Global</a>, leading a team to build and optimize digital solutions that enhance the brand’s online presence. My role blends strategy, hands-on development, and innovation, ensuring projects deliver seamless functionality and measurable business impact. I also oversee SEO strategy and implementation, driving growth and digital visibility.
+          </div>
+        </div>
+        
+        <div class="resume-item">
+          <div class="resume-header">
+            <div>
+              <div class="resume-title">Full‑Stack Developer</div>
+              <div class="resume-subtitle">UpWork · Fiverr · Freelance</div>
+            </div>
+            <div class="resume-period">2019 – 2022</div>
+          </div>
+          <div class="resume-description">
+            From 2019 to 2022, I worked as a freelance developer on Upwork and Fiverr, collaborating with clients worldwide on diverse projects. This experience allowed me to refine my skills in delivering clean, efficient, and user-focused solutions while building strong client relationships through consistent quality and reliability.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education Section -->
+      <div class="resume-section">
+        <h3 class="item-title" style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--muted);">Education</h3>
+        
+        <div class="resume-item">
+          <div class="resume-header">
+            <div>
+              <div class="resume-title">BSc (Hons) in Computing & Information Systems</div>
+              <div class="resume-subtitle">University of Greenwich · London, UK</div>
+            </div>
+            <div class="resume-period">2022</div>
+          </div>
+          <div class="resume-description">
+            I completed my BSc (Hons) in Computing & Information Systems from the University of Greenwich, under the NCC Education board, gaining solid technical knowledge and industry-relevant skills.
+          </div>
+        </div>
+        
+        <div class="resume-item">
+          <div class="resume-header">
+            <div>
+              <div class="resume-title">Diploma in Information Technology</div>
+              <div class="resume-subtitle">Daffodil International University · Dhaka, BD</div>
+            </div>
+            <div class="resume-period">2016 – 2020</div>
+          </div>
+          <div class="resume-description">
+            I earned a Diploma in Information Technology from Daffodil International University, where I developed a solid foundation in computing, problem-solving, and practical technical skills.
+          </div>
+        </div>
+      </div>
+
+      <!-- Download Resume Link -->
+      <a href="#" class="download-link">
+        <i class="bi bi-download"></i> Download resume (PDF)
+      </a>
+
+      <!-- <a href="#">Download resume (PDF)</a> <i class="bi bi-arrow-down-short"></i> -->
     </section>
   </main>
 
@@ -216,6 +360,3 @@
 
 </body>
 </html>
-
-
-
